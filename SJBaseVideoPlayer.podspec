@@ -59,6 +59,12 @@ Pod::Spec.new do |s|
     ss.dependency 'SJBaseVideoPlayer/Common'
   end
   
+  s.subspec 'CicadaPlayer' do |ss|
+    ss.source_files = 'SJBaseVideoPlayer/CicadaPlayer/**/*.{h,m}'
+    ss.dependency 'CicadaPlayer'
+    ss.dependency 'SJBaseVideoPlayer/Common'
+  end
+  
   s.dependency 'Masonry'
   s.dependency 'SJUIKit/AttributesFactory', '>= 0.0.0.38'
   s.dependency 'SJUIKit/ObserverHelper'
