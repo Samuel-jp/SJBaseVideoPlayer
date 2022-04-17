@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'CicadaPlayer' do |ss|
     ss.source_files = 'SJBaseVideoPlayer/CicadaPlayer/**/*.{h,m}'
-    ss.dependency 'CicadaPlayer'
+    ss.dependency 'CicadaPlayer', '0.4.2'
     ss.dependency 'SJBaseVideoPlayer/Common'
   end
   
